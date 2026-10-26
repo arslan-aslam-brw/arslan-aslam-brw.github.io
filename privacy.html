@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Router Manager</title>
+<style>
+  body {
+    margin: 0;
+    padding: 32px 16px 64px;
+    background: #f6f7f9;
+    color: #1d2330;
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px 44px;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  h1 { font-size: 30px; line-height: 1.25; margin: 0 0 6px; }
+  h2 {
+    font-size: 21px;
+    margin: 36px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e6e9ef;
+  }
+  .updated { color: #5b6475; margin: 0 0 24px; }
+  .summary {
+    background: #eef6f2;
+    border-left: 4px solid #1f9d6b;
+    padding: 14px 18px;
+    border-radius: 8px;
+  }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  a { color: #1a5fd0; }
+  @media (max-width: 600px) { main { padding: 28px 20px; } }
+</style>
+</head>
+<body>
+<main>
+
+<p><a href="./">← Router Manager</a></p>
+
+<h1>🔐 Privacy Policy — Router Manager</h1>
+<p class="updated"><strong>Last updated: 26 October 2026</strong></p>
+
+<p>Router Manager ("the app") is an unofficial tool for managing Huawei ONT routers over your local network, and for opening the admin web page of other routers on your local network. It is <strong>not affiliated with, endorsed by, or produced by Huawei</strong>.</p>
+
+<p class="summary">This policy explains what the app does with your information. <strong>The short version: the app has no server, no account system, and no analytics. Nothing you enter leaves your device or your local network.</strong> The app shows ads from Google AdMob, and it connects to the internet for those ads and for the optional Speed Test, both described below.</p>
+
+<h2>📱 What the App Stores, and Where</h2>
+
+<p>Everything below is stored <strong>only on your device</strong>. None of it is transmitted to the developer or to any third party.</p>
+
+<ul>
+  <li><strong>Router admin username and password:</strong> used to sign in to your router so the app can manage it. Stored in Android's encrypted secure storage, backed by the Android Keystore.</li>
+  <li><strong>Router IP address:</strong> used to reach your router on the local network. Stored in the app's preferences on your device.</li>
+  <li><strong>Known device list (device names and MAC addresses):</strong> used to detect when a new device joins your Wi-Fi and alert you. Stored in the app's preferences on your device.</li>
+  <li><strong>Wi-Fi data usage history:</strong> used to show daily, weekly and monthly usage charts. Stored in the app's preferences on your device.</li>
+  <li><strong>App settings (theme, alert preferences, router series choice):</strong> used to remember your choices. Stored in the app's preferences on your device.</li>
+  <li><strong>Router web page session (cookies and page cache):</strong> kept by Android's built-in WebView so another router's admin page keeps you signed in while you use it, as a web browser would. Stored in Android's WebView storage on your device.</li>
+</ul>
+
+<h2>🌐 Network Connections the App Makes</h2>
+
+<p><strong>Your own router:</strong> the app talks to your own router over your local network (for example http://192.168.100.1). This connection uses plain HTTP because that is what the router's own web interface provides. It never leaves your local network.</p>
+
+<p><strong>Other router web page:</strong> for routers the app cannot manage directly, the "Other router? Open its web page" screen opens the router's own admin page inside the app. To find it, the app checks whether a few common router addresses on your local network (such as 192.168.1.1, or your Wi-Fi's gateway address) answer on the usual web ports (80, 443 and 8080). These checks go only to addresses on your local network. The page is limited to router addresses: local network addresses (such as 192.168.x.x or 10.x.x.x) and the login addresses routers use on their own network (such as tplinkwifi.net). <strong>Other websites cannot be opened in it.</strong> The router's page is shown as the router provides it. Anything you type into it, such as the router's username and password, goes directly to your router. <strong>The app does not read, store or send it anywhere else.</strong></p>
+
+<p><strong>Speed Test:</strong> the app connects to the internet for the Speed Test screen only when you start a test yourself. The test downloads and uploads blocks of random test data to Cloudflare's public speed-test service (speed.cloudflare.com) to measure your connection speed. None of your personal data, router settings, credentials or device list is sent. As with any internet connection, Cloudflare can see your public IP address while the test runs. Cloudflare's handling of that is covered by <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's own privacy policy</a>.</p>
+
+<p><strong>Advertising:</strong> the home screen shows ads served by Google AdMob (Google Mobile Ads SDK). To show and measure ads, the SDK collects and sends to Google your device's advertising ID, your IP address, approximate location derived from it, device and app information, and how you interact with the ads. Where the law requires it (for example in the EEA, the UK and Switzerland) you are asked for consent before any ad is requested, using Google's consent form. You can reset or delete your advertising ID in your phone's settings. None of your router data, credentials or device list is passed to the ad SDK. Google's use of this data is covered by <a href="https://policies.google.com/technologies/partner-sites">Google's own policy</a>.</p>
+
+<p>The app makes <strong>no other internet connections</strong>, and none to the developer or to any analytics or crash-reporting service.</p>
+
+<h2>🛡️ Permissions and Why They Are Needed</h2>
+
+<ul>
+  <li><strong>Internet, network state and Wi-Fi state:</strong> to reach your router on the local network and detect which network you are on.</li>
+  <li><strong>Usage access (optional):</strong> used only to calculate your Wi-Fi data usage totals on your device, because the router's firmware does not track usage itself. This data is read on your device, shown to you, and never transmitted. The app works without this permission; only the Network Statistics screen is affected.</li>
+  <li><strong>Notifications:</strong> to alert you when a new device joins your network.</li>
+  <li><strong>Foreground service, wake lock and boot completed (optional):</strong> used only if you turn on new-device monitoring, so the check can continue while the app is closed. This service contacts your router only.</li>
+  <li><strong>Ignore battery optimizations (optional):</strong> requested only through Android's own dialog. Without it, some phone manufacturers stop background new-device checks from running.</li>
+</ul>
+
+<p>You can decline any of the optional permissions and continue using the app.</p>
+
+<h2>🤝 Data Sharing and Selling</h2>
+
+<p>The developer <strong>does not collect, receive, share, or sell any of your data</strong>. There is no back end to send it to. The advertising data described above goes directly from your device to Google, not to the developer.</p>
+
+<h2>👶 Children</h2>
+
+<p>The app is a network administration utility and is not directed at children.</p>
+
+<h2>🗑️ Deleting Your Data</h2>
+
+<p>Uninstalling the app removes everything it stored, including saved router credentials. You can also clear it at any time in <strong>Android Settings → Apps → Router Manager → Storage → Clear data</strong>.</p>
+
+<h2>📝 Changes to This Policy</h2>
+
+<p>If this policy changes, the updated version will be published at the same web address with a new "Last updated" date.</p>
+
+<h2>✉️ Contact</h2>
+
+<p>Questions about this policy: <a href="mailto:hi2youknow@gmail.com"><strong>hi2youknow@gmail.com</strong></a></p>
+
+</main>
+</body>
+</html>
